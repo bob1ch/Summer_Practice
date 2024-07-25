@@ -1,1 +1,5 @@
+#ignore venv
 /venv
+
+#ignore models
+*.pt
