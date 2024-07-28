@@ -1,0 +1,4 @@
+fasterrcnn_resnet50_fpn acc: 0.5416666666666666
+fasterrcnn_resnet50_fpn_v2 acc: 0.5277777777777778
+fasterrcnn_mobilenet_v3_large_fpn acc: 0.3472222222222222
+fasterrcnn_mobilenet_v3_large_320_fpn acc: 0.4305555555555556
