@@ -1,0 +1,5 @@
+\selectlanguage *[]{russian}
+\contentsline {section}{Введение}{3}{section*.1}%
+\contentsline {section}{\numberline {1}Основная часть}{5}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Индивидуальное задание практики}{5}{subsection.1.1}%
+\contentsline {section}{Заключение}{6}{section*.2}%

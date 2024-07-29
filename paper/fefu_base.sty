@@ -1,0 +1,206 @@
+%%
+%% This is file `fefu_base.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% fefu_base.dtx  (with options: `package')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from fefu_base.sty.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file fefu_base.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fefu_base}
+    [2019/05/30 LaTeX utility package for FEFU classes]
+\RequirePackage{ulem}
+\RequirePackage{calc}
+\RequirePackage{pbox}
+\RequirePackage{array}
+\RequirePackage{xifthen}
+\RequirePackage{graphicx}
+\RequirePackage{fontspec}
+\RequirePackage{etoolbox}
+\RequirePackage{polyglossia}
+\newcommand{\@FEFUschool}{цифровой экономики}
+\newcommand{\@FEFUschoolsuffix}{}
+\newcommand{\@FEFUgroup}{}
+\newcommand{\@FEFUsupervisor}{}
+\newcommand{\@FEFUsupervisortitle}{}
+\newcommand{\@FEFUconsultant}{}
+\newcommand{\@FEFUoffsitesupervisor}{}
+\newcommand{\@FEFUoffsitesupervisortitle}{}
+\newcommand{\@FEFUreviewer}{}
+\newcommand{\@FEFUreviewertitle}{}
+\newcommand{\@FEFUdirector}{}
+\newcommand{\@FEFUdirectortitle}{}
+\newcommand{\@FEFUsecretary}{}
+\newcommand{\@FEFUsecretarytitle}{}
+\newcommand{\@FEFUdeputy}{}
+\newcommand{\@FEFUdeputytitle}{}
+\newcommand{\@FEFUdeputyjobtitle}{}
+\newcommand{\@FEFUexportsupervisor}{}
+\newcommand{\@FEFUexportsupervisortitle}{}
+\newcommand{\@FEFUplace}{}
+\newcommand{\@FEFUstartdate}{}
+\newcommand{\@FEFUenddate}{}
+\newcommand{\@FEFUstartyear}{\the\year}
+\newcommand{\@FEFUendyear}{\the\year}
+\newcommand{\@FEFUpracticetask}{}
+\newcommand{\@FEFUfaculty}{}
+\newcommand{\@FEFUprogram}{}
+\newcommand{\@FEFUpracticetitle}{Учебная ознакомительная практика}
+\newcommand{\@FEFUfeedback}{}
+\newcommand{\@FEFUschooltitle}{Школа}
+\newcommand{\@FEFUschoolreferencetitle}{Школы}
+\newcommand{\@FEFUdepartment}{}
+\newcommand{\@FEFUdepartmenttitle}{}
+\newcommand{\@FEFUdepartmentreferencetitle}{}
+\newcommand{\@FEFUadmissiondate}{\@date}
+\newcommand{\@FEFUexportcontroldate}{\@date}
+\newcommand{\@FEFUsupervisordate}{\@date}
+\newcommand{\@FEFUconsultantdate}{\@date}
+\newcommand{\@FEFUsecretarydate}{\@date}
+\newcommand{\setschool}[1]{\renewcommand{\@FEFUschool}{#1}}
+\newcommand{\setschoolsuffix}[1]{\renewcommand{\@FEFUschoolsuffix}{#1}}
+\newcommand{\setgroup}[1]{\renewcommand{\@FEFUgroup}{#1}}
+\newcommand{\setplace}[1]{\renewcommand{\@FEFUplace}{#1}}
+\newcommand{\setdepartment}[1]{\renewcommand{\@FEFUdepartment}{#1}}
+\newcommand{\setdepartmenttitle}[1]{\renewcommand{\@FEFUdepartmenttitle}{#1}}
+\newcommand{\setdepartmentreferencetitle}[1]{\renewcommand{\@FEFUdepartmentreferencetitle}{#1}}
+\newcommand{\setpracticetask}[1]{\renewcommand{\@FEFUpracticetask}{#1}}
+\newcommand{\setpracticetitle}[1]{\renewcommand{\@FEFUpracticetitle}{#1}}
+\newcommand{\setfaculty}[1]{\renewcommand{\@FEFUfaculty}{#1}}
+\newcommand{\setprogram}[1]{\renewcommand{\@FEFUprogram}{#1}}
+\newcommand{\setfeedback}[1]{\renewcommand{\@FEFUfeedback}{#1}}
+\newcommand{\setconsultant}[1]{\renewcommand{\@FEFUconsultant}{#1}}
+\newcommand{\setschooltitle}[1]{\renewcommand{\@FEFUschooltitle}{#1}}
+\newcommand{\setschoolreferencetitle}[1]{\renewcommand{\@FEFUschoolreferencetitle}{#1}}
+\newcommand{\setadmissiondate}[1]{\renewcommand{\@FEFUadmissiondate}{#1}}
+\newcommand{\setexportcontroldate}[1]{\renewcommand{\@FEFUexportcontroldate}{#1}}
+\newcommand{\setsupervisordate}[1]{\renewcommand{\@FEFUsupervisordate}{#1}}
+\newcommand{\setconsultantdate}[1]{\renewcommand{\@FEFUconsultantdate}{#1}}
+\newcommand{\setsecretarydate}[1]{\renewcommand{\@FEFUsecretarydate}{#1}}
+\newif\if@FEFUfemale
+\newif\if@FEFUoffsite
+\newcommand{\setsupervisor}[2]{
+    \renewcommand{\@FEFUsupervisor}{#1}
+    \renewcommand{\@FEFUsupervisortitle}{#2}
+}
+\newcommand{\setoffsitesupervisor}[2]{
+    \renewcommand{\@FEFUoffsitesupervisor}{#1}
+    \renewcommand{\@FEFUoffsitesupervisortitle}{#2}
+}
+\newcommand{\setreviewer}[2]{
+    \renewcommand{\@FEFUreviewer}{#1}
+    \renewcommand{\@FEFUreviewertitle}{#2}
+}
+\newcommand{\setdirector}[2]{
+    \renewcommand{\@FEFUdirector}{#1}
+    \renewcommand{\@FEFUdirectortitle}{#2}
+}
+\newcommand{\setsecretary}[2]{
+    \renewcommand{\@FEFUsecretary}{#1}
+    \renewcommand{\@FEFUsecretarytitle}{#2}
+}
+\newcommand{\setdeputy}[3][]{
+    \renewcommand{\@FEFUdeputy}{#2}
+    \renewcommand{\@FEFUdeputytitle}{#3}
+    \renewcommand{\@FEFUdeputyjobtitle}{#1}
+}
+\newcommand{\setexportsupervisor}[2]{
+    \renewcommand{\@FEFUexportsupervisor}{#1}
+    \renewcommand{\@FEFUexportsupervisortitle}{#2}
+}
+\newcommand{\setstartdate}[2][]{
+    \renewcommand{\@FEFUstartdate}{#2}
+    \@FEFUifempty{#1}{}{\renewcommand{\@FEFUstartyear}{#1}}
+}
+\newcommand{\setenddate}[2][]{
+    \renewcommand{\@FEFUenddate}{#2}
+    \@FEFUifempty{#1}{}{\renewcommand{\@FEFUendyear}{#1}}
+}
+\newcommand{\setmonthname}[2]{\expandafter\def\csname @FEFUmonthname#1\endcsname{#2}}
+\setmonthname{01}{января}
+\setmonthname{02}{февраля}
+\setmonthname{03}{марта}
+\setmonthname{04}{апреля}
+\setmonthname{05}{мая}
+\setmonthname{06}{июня}
+\setmonthname{07}{июля}
+\setmonthname{08}{августа}
+\setmonthname{09}{сентября}
+\setmonthname{10}{октября}
+\setmonthname{11}{ноября}
+\setmonthname{12}{декабря}
+\newcommand{\setfemale}{\@FEFUfemaletrue}
+\newcommand{\setmale}{\@FEFUfemalefalse}
+\newcommand{\setoffsite}{\@FEFUoffsitetrue}
+\newcommand{\setonsite}{\@FEFUoffsitefalse}
+\useunder{\uline}{\@FEFUunderline}{}
+\newcommand*\@FEFUshortyear[1]{\expandafter\@gobbletwo\number\numexpr#1\relax}
+\def\@FEFUshortnamehelper#1 #2 #3\relax{%
+    \StrLeft{#2}{1}[\@FEFU@name]\StrLeft{#3}{1}[\@FEFU@middlename]%
+    #1 \@FEFU@name. \@FEFU@middlename.%
+}
+\def\@FEFUshortname#1{\@FEFUifempty{#1}{}{\expandafter\@FEFUshortnamehelper#1\relax}}
+\def\@FEFUshortnamereversedhelper#1 #2 #3\relax{%
+    \StrLeft{#2}{1}[\@FEFU@name]\StrLeft{#3}{1}[\@FEFU@middlename]%
+    \@FEFU@name. \@FEFU@middlename. #1%
+}
+\def\@FEFUshortnamereversed#1{\@FEFUifempty{#1}{}{\expandafter\@FEFUshortnamereversedhelper#1\relax}}
+\def\@FEFUacronymhelper#1 #2\relax{%
+    \StrLen{#1}[\WordLength]%
+    \StrLeft{#1}{1}[\FirstLetter]%
+    \ifthenelse{\equal{\WordLength}{1}}{}{\MakeUppercase{\FirstLetter}}%
+    \@FEFUifempty{#2}{}{\expandafter\@FEFUacronymhelper#2\relax}%
+}
+\def\@FEFUacronym#1{\@FEFUifempty{#1}{}{\expandafter\@FEFUacronymhelper\expanded{#1} \relax}}
+\def\@FEFUdropdot#1.\relax{#1}
+\newcommand{\@FEFUgetyear}[2][\the\year]{%
+    \def\@FEFUgetyearhelper##1.##2.##3\relax{\@FEFUifempty{##3}{#1}{20\@FEFUdropdot##3\relax}}%
+    \expandafter\@FEFUgetyearhelper#2.\relax%
+}
+\def\@FEFUgetmonthhelper#1.#2.#3\relax{#2}
+\def\@FEFUgetmonth#1{\expandafter\@FEFUgetmonthhelper#1.\relax}
+\def\@FEFUgetdayhelper#1.#2\relax{#1}
+\def\@FEFUgetday#1{\expandafter\@FEFUgetdayhelper#1\relax}
+\newcommand{\@FEFUifempty}[3]{%
+    \ifthenelse{\equal{#1}{}}{#2}{#3}%
+}
+\newcommand{\@FEFUcoalesce}[2]{%
+    \@FEFUifempty{#1}{\@FEFUifempty{#2}{}{#2}}{#1}%
+}
+\newcommand{\@FEFUgendered}[2]{\if@FEFUfemale#1\else#2\fi}
+\newcommand{\@FEFUsplitandapply}[4][ ]{%
+    {%
+        \def\@FEFUsplitandapplyhelper##1#1##2\relax{#3{##1}#1#4{##2}}%
+        \expandafter\@FEFUsplitandapplyhelper#2\relax%
+    }%
+}
+\newcommand{\@FEFUaddguillemots}[1]{\guillemotleft#1\guillemotright}
+\newcommand{\@FEFUremoveprefix}[2][ ]{
+    \def\@FEFUremoveprefixhelper##1#1##2\relax{\@FEFUifempty{##2}{##1}{\@FEFUremoveprefixhelper##2\relax}}%
+    \expandafter\@FEFUremoveprefixhelper#2#1\relax
+}
+\date{}
+\title{}
+\author{}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}m{#1}}
+\newcommand{\fefuloadstyle}[1]{%
+    \RequirePackage{fefu_style_#1}
+}
+\endinput
+%%
+%% End of file `fefu_base.sty'.

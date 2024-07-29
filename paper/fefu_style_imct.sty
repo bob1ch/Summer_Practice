@@ -1,0 +1,236 @@
+%%
+%% This is file `fefu_style_imct.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% fefu_style_imct.dtx  (with options: `package')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from fefu_style_imct.sty.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file fefu_style_imct.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{fefu_style_imct}
+    [2022/06/14 LaTeX default style for FEFU document]
+\RequirePackage{multirow}
+\renewcommand{\@FEFUheader}{%
+    \fefuimage\\
+    {\setstretch{1}\small
+        МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ\\
+        Федеральное государственное автономное
+        образовательное учреждение высшего образования\\
+        \textbf{«Дальневосточный федеральный университет»}\\
+        (ДВФУ)\\
+        {\bfseries\@FEFUschooltitle\ \@FEFUschool\@FEFUifempty{\@FEFUschoolsuffix}{}{\ \@FEFUschoolsuffix}}\\
+        \@FEFUdepartmenttitle\ \@FEFUdepartment\\
+    }
+}
+\renewcommand{\@FEFUfooter}{%
+    {\setstretch{1}\small\centering{Владивосток\\\the\year}\par}
+}
+\addtitle{thesis}{
+    {\setstretch{1}\small
+        \vskip 2\bigskipamount
+        \par\vbox to 8\bigskipamount {%
+            \@FEFUifempty{\@author}{~}{\@author}\\\vskip 2\bigskipamount
+            {\bfseries ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ РАБОТА\\}
+            Магистерская диссертация\\
+        }
+        \vskip\bigskipamount
+        \par\vbox to 8\bigskipamount {\bfseries\MakeUppercase{\@title}\\}
+        по направлению подготовки\\
+        \@FEFUifempty{\@FEFUfaculty}{}{\@FEFUsplitandapply{\@FEFUfaculty}{}{\@FEFUaddguillemots}},\\
+        магистерская программа \@FEFUaddguillemots{\@FEFUprogram}\\
+    }%
+}
+\renewcommand{\makethesistitlebackside}[1][1.25]{%
+    \thispagestyle{empty}
+    \newgeometry{a4paper,left=1cm,right=2.5cm,top=2cm,bottom=2cm}
+    \setlength{\@FEFUcolumnwidth}{.45\textwidth}
+    {\setstretch{#1}\small%
+        \noindent\begin{tabular}{p{\@FEFUcolumnwidth}p{.03\textwidth}p{\@FEFUcolumnwidth}}
+            \multirow{4}{\@FEFUcolumnwidth}{\setstretch{1}В материалах данной выпускной квалификационной работы не\\ содержатся сведения, составляющие\\ государственную тайну, и сведения,\\ подлежащие экспортному контролю} && \@FEFUpostfield[подпись]{Автор работы }{}{0.9\@FEFUcolumnwidth}\\
+            && Группа \@FEFUgroup\\
+            && \expandafter\@FEFUdate\expandafter[\@date]{\@FEFUcolumnwidth}\\ &&\\ &&\\
+            Уполномоченый по экспортному контролю && \@FEFUmultilinepostfield[{\tiny должность, уч. степень, уч. звание}]{Руководитель ВКР }{\@FEFUsupervisortitle}{\@FEFUcolumnwidth}\\
+            \@FEFUsignamereversed{\@FEFUsignwidth}{\@FEFUexportsupervisor}{\@FEFUcolumnwidth} && \@FEFUsignamereversed{\@FEFUsignwidth}{\@FEFUsupervisor}{\@FEFUcolumnwidth}\\
+            \expandafter\@FEFUdate\expandafter[\@FEFUexportcontroldate]{\@FEFUcolumnwidth} && \expandafter\@FEFUdate\expandafter[\@FEFUsupervisordate]{\@FEFUcolumnwidth}\\ && \\
+            && Консультант\\
+            && \@FEFUsignamereversed{\@FEFUsignwidth}{\@FEFUconsultant}{\@FEFUcolumnwidth}\\
+            && \expandafter\@FEFUdate\expandafter[\@FEFUconsultantdate]{\@FEFUcolumnwidth}\\ &&\\
+            && \@FEFUmultilinepostfield[уч. степень, уч. звание]{Назначен рецензент }{\@FEFUreviewertitle}{\@FEFUcolumnwidth}\\
+            && \@FEFUfield[фамилия, имя, отчество]{\@FEFUreviewer}{\@FEFUcolumnwidth}\\
+            &&\\ &&\\ &&\\
+            Защищена в ГЭК с оценкой && \textbf{\@FEFUaddguillemots{Допустить к защите}}\\
+            \@FEFUfield{}{0.75\@FEFUcolumnwidth} && \multirow{3}{\@FEFUcolumnwidth}{\@FEFUdeputyjobtitle\ \@FEFUdepartmentreferencetitle\ \@FEFUdepartment,\ \@FEFUdeputytitle}\\ &&\\
+            Секретарь ГЭК &&\\
+            \@FEFUsignamereversed{\@FEFUsignwidth}{\@FEFUsecretary}{\@FEFUcolumnwidth} && \@FEFUsignamereversed{\@FEFUsignwidth}{\@FEFUdeputy}{\@FEFUcolumnwidth}\\
+            \expandafter\@FEFUdate\expandafter[\@FEFUsecretarydate]{\@FEFUcolumnwidth} && \expandafter\@FEFUdate\expandafter[\@FEFUadmissiondate]{\@FEFUcolumnwidth}\\
+        \end{tabular}\\
+    }
+    \addtocounter{page}{-1}
+    \newpage
+    \restoregeometry
+}
+\newcounter{@FEFUtaskitemcounter}
+\setcounter{@FEFUtaskitemcounter}{0}
+\renewenvironment{thesistask}[5][\@author]{%
+    \fefuheader%
+    \def\@FEFUdeadline{#4}%
+    \def\@FEFUtaskdate{#5}%
+    \setcounter{@FEFUtaskitemcounter}{0}%
+    \def\@FEFUnexttaskitemtitle{%
+        \def\@FEFUnexttaskitemtitle{%
+            \def\@FEFUnexttaskitemtitle{%
+                \def\@FEFUnexttaskitemtitle{%
+                    \def\@FEFUnexttaskitemtitle{%
+                        \def\@FEFUnexttaskitemtitle{%
+                            \def\@FEFUnexttaskitemtitle{%
+                                \def\@FEFUnexttaskitemtitle{\def\@FEFUtaskitemtitle{}}%
+                                \def\@FEFUtaskitemtitle{Основные источники информации: научная литература по тематике исследования,\hfill\null\\ нормативно-правовая литература, результаты, полученные в ходе преддипломной практики,\hfill\null\\}%
+                            }%
+                            \def\@FEFUtaskitemtitle{Консультанты по работе:}%
+                        }%
+                        \def\@FEFUtaskitemtitle{Перечень графического материала (с указанием обязательных чертежей):\hfill\null\\}%
+                    }%
+                    \def\@FEFUtaskitemtitle{Содержание работы (перечень подлежащих разработке вопросов):\hfill\null\\}%
+                }%
+                \def\@FEFUtaskitemtitle{Исходные данные по работе:\hfill\null\\}%
+            }%
+            \def\@FEFUtaskitemtitle{Срок сдачи студентом законченной работы:}%
+        }%
+        \def\@FEFUtaskitemtitle{Тема работы:}%
+    }%
+    \def\skiptaskitem{\@FEFUnexttaskitemtitle}%
+    \def\taskitem##1{\@FEFUnexttaskitemtitle\uline{\stepcounter{@FEFUtaskitemcounter}\the@FEFUtaskitemcounter.\ \expandafter\empty\@FEFUtaskitemtitle\ ##1\hfill\null}\bigskip\medskip\par}%
+    {\centering\bfseries\small ЗАДАНИЕ\\на выпускную квалификационную работу\\\bigskip\medskip}%
+    \begingroup\setstretch{1.25}\small\pagestyle{empty}\setlength{\parindent}{0pt}%
+        \hbox to \textwidth{\uline{\@FEFUgendered{студентке}{студенту}\hfill#1\hfill}}
+        \bigskip\bigskip
+        \hbox to \textwidth{\uline{\@FEFUfaculty, группы \@FEFUgroup\hfill}}
+        \par\bigskip\bigskip
+        \expandafter\taskitem\expandafter{\@title}
+        \taskitem{\@FEFUdeadline}
+    }{\def\@FEFUnexttaskitemtitle{\def\@FEFUtaskitemtitle{Дата выдачи задания:}}
+        \taskitem{\@FEFUtaskdate}
+        \bigskip%
+        \parbox[b]{0.5\textwidth}{Руководитель ВКР:\ \@FEFUfield[И.О.Ф.]{\@FEFUshortnamereversed{\@FEFUsupervisor}}{.25\textwidth}\hfill\null} \@FEFUfield[подпись]{}{.3\textwidth}\\
+        \par\medskip
+        Задание \@FEFUgendered{приняла}{принял} к исполнению \@FEFUtaskdate\\
+        \par\parbox[b]{0.5\textwidth}{\@FEFUgendered{Студентка}{Студент}\ \@FEFUfield[И.О.Ф.]{\@FEFUshortnamereversed{\@author}}{.25\textwidth}\hfill\null} \@FEFUfield[подпись]{}{.3\textwidth}
+    \par\newpage\endgroup}
+\renewenvironment{supervisorreview}[1][\@author]{%
+    \def\@FEFUnextreviewitemtitle{%
+        \def\@FEFUnextreviewitemtitle{%
+            \def\@FEFUnextreviewitemtitle{%
+                \def\@FEFUnextreviewitemtitle{%
+                    \def\@FEFUnextreviewitemtitle{%
+                        \def\@FEFUnextreviewitemtitle{%
+                            \def\@FEFUnextreviewitemtitle{\def\@FEFUreviewitemtitle{}}%
+                            \def\@FEFUreviewitemtitle{Рекомендации}%
+                        }
+                        \def\@FEFUreviewitemtitle{Оценка работы \@FEFUgendered{выпускницы}{выпускника}}%
+                    }
+                    \def\@FEFUreviewitemtitle{Допуск к защите}%
+                }
+                \def\@FEFUreviewitemtitle{Замечания по работе обучающегося}%
+            }
+            \def\@FEFUreviewitemtitle{Характеристика работы обучающегося}%
+        }
+        \def\@FEFUreviewitemtitle{Актуальность работы}%
+    }
+    \def\reviewitem{\bigskip\medskip\par\@FEFUnextreviewitemtitle\textbf{\@FEFUreviewitemtitle}\\}
+    \fefuheader
+    {\centering\small
+        {\bfseries ОТЗЫВ\\руководителя ВКР на работу обучающегося\\}
+        \bigskip
+        #1\\
+        \bigskip
+        направление подготовки \@FEFUfaculty\\
+        \bigskip
+        магистерская программа \@FEFUaddguillemots{\@FEFUprogram}\\
+        \bigskip
+        {\bfseries над выпускной квалификационной работой магистра\\\@FEFUaddguillemots{\@title}}\\
+    }
+    \begingroup\small\pagestyle{empty}\setlength{\parindent}{0pt}%
+}{%
+    \par\bigskip
+    Руководитель ВКР:\\
+    \par\begingroup\setlength\tabcolsep{.25cm}\def\arraystretch{0}\setlength{\@FEFUlength}{.3\textwidth-1cm}%
+    \begin{tabular}{@{}b{.4\textwidth}b{\@FEFUlength}b{.3\textwidth}@{}}
+        \@FEFUfield[должность, ученое звание]{\pbox[b]{.4\textwidth}{\@FEFUsupervisortitle}}{.4\textwidth} & \@FEFUfield[Ф.И.О.]{\@FEFUshortname{\@FEFUsupervisor}}{\@FEFUlength} & \@FEFUfield[подпись]{}{.3\textwidth}
+    \end{tabular}\\
+    \par\@FEFUdate{\@FEFUcolumnwidth}\endgroup
+    \par\newpage\endgroup
+}
+\renewenvironment{review}[1][\@author]{%
+    \def\@FEFUnextreviewitemtitle{%
+        \def\@FEFUnextreviewitemtitle{%
+            \def\@FEFUnextreviewitemtitle{%
+                \def\@FEFUnextreviewitemtitle{%
+                    \def\@FEFUnextreviewitemtitle{%
+                        \def\@FEFUnextreviewitemtitle{\def\@FEFUreviewitemtitle{}}%
+                    }
+                    \def\@FEFUreviewitemtitle{Заключение}%
+                }
+                \def\@FEFUreviewitemtitle{Замечания по работе}%
+            }
+            \def\@FEFUreviewitemtitle{Характеристика работы обучающегося}%
+        }
+        \def\@FEFUreviewitemtitle{Актуальность работы}%
+    }
+    \def\reviewitem{\bigskip\medskip\par\@FEFUnextreviewitemtitle\textbf{\@FEFUreviewitemtitle}\\}
+    \fefuheader
+    {\centering\small
+        {\bfseries РЕЦЕНЗИЯ\\на выпускную квалификационную работу\\\@FEFUaddguillemots{\@title},\\}
+        \bigskip
+        {\bfseries выполненную обучающимся Дальневосточного федерального университета}\\
+        #1\\
+    }
+    \begingroup\small\pagestyle{empty}\setlength{\parindent}{0pt}%
+}{%
+    \par\bigskip
+    Рецензент:\\
+    \par\begingroup\setlength\tabcolsep{.25cm}\def\arraystretch{0}\setlength{\@FEFUlength}{.3\textwidth-1cm}%
+    \begin{tabular}{@{}b{.4\textwidth}b{\@FEFUlength}b{.3\textwidth}@{}}
+        \@FEFUfield[должность, ученое звание]{\pbox[b]{.4\textwidth}{\@FEFUreviewertitle}}{.4\textwidth} & \@FEFUfield[Ф.И.О.]{\@FEFUshortname{\@FEFUreviewer}}{\@FEFUlength} & \@FEFUfield[подпись]{}{.3\textwidth}
+    \end{tabular}\\
+    \par\@FEFUdate{\@FEFUcolumnwidth}\endgroup
+    \par\newpage\endgroup
+}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[R]{\thepage}}
+\pagestyle{plain}
+\titlespacing{\section}{0pt}{0pt}{1em}
+\titleformat{\section}[block]
+    {\bfseries\normalsize}{}{0pt}{\hfill\thesection~\hyperlink{sec:contents}{#1}\hfill}
+
+\titlespacing{name=\section,numberless}{0pt}{0pt}{1em}
+\addto\captionsrussian{%
+    \renewcommand{\contentsname}{СОДЕРЖАНИЕ}%
+    \renewcommand{\abstractname}{АННОТАЦИЯ}%
+}
+\renewcommand{\@FEFUbibtitle}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+\setdepartment{цифровой трансформации}
+\setdepartmenttitle{Академия}
+\setdepartmentreferencetitle{Академии}
+\setschool{математики и компьютерных технологий}
+\setschooltitle{Институт}
+\setschoolreferencetitle{Института}
+\setschoolsuffix{(Школа)}
+\renewcommand{\@FEFUimage}{%
+    \includegraphics[scale=0.13]{\jobname-fefu.png}%
+}
+\endinput
+%%
+%% End of file `fefu_style_imct.sty'.
