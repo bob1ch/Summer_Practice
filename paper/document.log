@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.7.29)  31 JUL 2024 17:19
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.7.29)  31 JUL 2024 17:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1810,6 +1810,30 @@ atin" to scripttag "") on input line 7.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 7.
 
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 8.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 8.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 8.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 8.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 8.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 8.
+
 )
 \tf@toc=\write7
 \openout7 = `document.toc'.
@@ -2071,6 +2095,44 @@ atin" to scripttag "") on input line 61.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 61.
 
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 67.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 67.
+
+[8]
+Underfull \hbox (badness 2384) in paragraph at lines 67--68
+\TU/TimesNewRoman(0)/m/n/14.4 находится объект. И идея такова, что в первую оче
+редь будет проведен
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 69--70
+[]\TU/TimesNewRoman(0)/m/n/14.4 Заключительной идее в R-CNN стало следующее: вы
+борочный поиск
+ []
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 71.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 71.
+
+File: images/R-CNN_alg.png Graphic file (type bmp)
+<images/R-CNN_alg.png>
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 74.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 74.
+
 )
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
@@ -2080,7 +2142,7 @@ atin" to scripttag "") on input line 43.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 43.
 
-[8] (./subfiles/conclusion.tex
+[9] (./subfiles/conclusion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 []\TU/TimesNewRoman(0)/m/n/14.4 Во время прохождения практики были успешно выпо
 лнены все
@@ -2118,7 +2180,7 @@ atin" to scripttag "") on input line 46.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 46.
 
-[9]
+[10]
 
 LaTeX Warning: Empty bibliography on input line 48.
 
@@ -2182,7 +2244,7 @@ atin" to scripttag "") on input line 8.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 8.
 
-[10
+[11
 
 ]
 
@@ -2193,7 +2255,7 @@ atin" to scripttag "") on input line 8.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 8.
 
-[11
+[12
 
 ]) (./subfiles/practice-task.tex
 
@@ -2212,7 +2274,7 @@ atin" to scripttag "") on input line 6.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 6.
 
-[12]) (./document.aux)
+[13]) (./document.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2221,14 +2283,8 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
-
-Package rerunfilecheck Warning: File `document.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `document.out':
-(rerunfilecheck)             Before: D444297C72F82DDBD37DB30F1004F6BC;1022
-(rerunfilecheck)             After:  0CFD3EB890152F7500C550DD3B827E49;1022.
+Package rerunfilecheck Info: File `document.out' has not changed.
+(rerunfilecheck)             Checksum: E03212562AE3ED6C401FC20B0E62FBF7;1142.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                document
@@ -2239,12 +2295,12 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40433 strings out of 476772
- 823484 string characters out of 5803394
+ 40444 strings out of 476772
+ 823743 string characters out of 5803394
  1930839 words of memory out of 5000000
- 61826 multiletter control sequences out of 15000+600000
+ 61836 multiletter control sequences out of 15000+600000
  563557 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  109i,12n,131p,2369b,3963s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on document.pdf (12 pages).
+Output written on document.pdf (13 pages).
