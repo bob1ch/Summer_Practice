@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{print\PYGZus{}accuracy}\PYG{p}{(}\PYG{n}{y\PYGZus{}pred\PYGZus{}dict}\PYG{p}{,} \PYG{n}{y\PYGZus{}true}\PYG{p}{,} \PYG{n}{save} \PYG{o}{=} \PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{file\PYGZus{}name} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}accuracy.txt\PYGZsq{}}\PYG{p}{):}
+    \PYG{n}{file} \PYG{o}{=} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{file\PYGZus{}name}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}w\PYGZsq{}}\PYG{p}{)} \PYG{k}{if} \PYG{n}{save} \PYG{k}{else} \PYG{k+kc}{None}
+	
+    \PYG{k}{for} \PYG{n}{model}\PYG{p}{,} \PYG{n}{y\PYGZus{}pred} \PYG{o+ow}{in} \PYG{n}{y\PYGZus{}pred\PYGZus{}dict}\PYG{o}{.}\PYG{n}{items}\PYG{p}{():}
+        \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{model}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{ acc: }\PYG{l+s+si}{\PYGZob{}}\PYG{p}{(}\PYG{n}{y\PYGZus{}pred}\PYG{+w}{ }\PYG{o}{==}\PYG{+w}{ }\PYG{n}{y\PYGZus{}true}\PYG{p}{)}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{()}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{file}\PYG{o}{=}\PYG{n}{file}\PYG{p}{)}
+	
+	\PYG{k}{if} \PYG{n}{save}\PYG{p}{:}
+	    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}accuracy metrics saved in }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{file\PYGZus{}name}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+	    \PYG{n}{file}\PYG{o}{.}\PYG{n}{close}\PYG{p}{()}
+	    \PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Вычисление} \PYG{n}{точности}\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

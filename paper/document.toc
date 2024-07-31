@@ -6,4 +6,5 @@
 \contentsline {subsection}{\numberline {1.3}YOLO}{6}{subsection.1.3}%
 \contentsline {subsection}{\numberline {1.4}RT-DETR}{7}{subsection.1.4}%
 \contentsline {subsection}{\numberline {1.5}Faster R-CNN}{9}{subsection.1.5}%
-\contentsline {section}{Заключение}{10}{section*.7}%
+\contentsline {subsection}{\numberline {1.6}Исследование моделей}{10}{subsection.1.6}%
+\contentsline {section}{Заключение}{18}{section*.13}%

@@ -73,5 +73,125 @@
  			\includegraphics[scale=0.5]{R-CNN_alg.png}
  			\caption{Принцип работы Faster R-CNN}
  		\end{figure}
+ 	
+ 	\subsection{Исследование моделей}
+ 		\par Для исследования моделей был собран небольшой тестовый датасет из 71 изображения. 51 изображение содержало медведей, 20 изображений медведей не содержали. Изображения подбирались с учетом специфики задания, а именно подбирались изображения из дикой природы, полученные при помощи фотоловушек или съемки издалека, то есть художественные снимки заведомо не подходили, так как имели высокое качество, что в свою очередь не соответствовало специфике задания.
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics{bear3.jpg}
+ 			\caption{Пример изображения, которое содержит медведя}
+ 		\end{figure}
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics{8.jpg}
+ 			\caption{Пример изображения, которое медведя не содержит}
+ 		\end{figure}
+ 		\par Для выполнения работы были использованы следующие библиотеки:
+ 		\begin{itemize}
+ 			\item ultralytics
+ 			\item torchvision
+ 			\item matplotlib
+ 			\item sklearn
+ 		\end{itemize}
+ 		\par Метрикой качества модели была выбрана accuracy, также были построены матрицы ошибок и ROC кривая.
+ 		\par Вычисление метрики, посмотрение матриц ошибок и ROC кривой было выполнено в виде функций, в которые передавались истинные метки и метки предказанные моделями. В функцию для построения ROC кривой вместо предсказанных меток передавалась уверенность модели в ответе.
  		
+ 		\noindent Вычисление точности:
+ 		\begin{minted}{python}
+def print_accuracy(y_pred_dict, y_true, save = False, file_name = 'accuracy.txt'):
+    file = open(file_name, 'w') if save else None
+	
+    for model, y_pred in y_pred_dict.items():
+        print(f'{model} acc: {(y_pred == y_true).mean()}', file=file)
+	
+	if save:
+	    print(f'accuracy metrics saved in {file_name}')
+	    file.close()
+	    \caption{Вычисление точности}
+ 		\end{minted}
+ 		\noindent Построение матрицы ошибок:
+ 		\begin{minted}{python}
+def plot_conf_mat(y_pred_dict, y_true, rows_cols: tuple[int] | None = None, figsize: tuple[int] | None = None, save = False, file_name = 'ConfMat_plot.png'):
+	if not rows_cols:
+		rows, cols = factor(len(y_pred_dict)) #определяем кол-во строк и столбцов при помощи разложения на множители
+	rows, cols = rows_cols
+	fig, axs = plt.subplots(rows, cols, figsize=figsize)
+	counter = 0
+		for i in range(rows):
+			for j in range(cols):
+			model, y_pred = list(y_pred_dict.items())[counter]
+			cm = confusion_matrix(y_true, y_pred)
+			axs[i][j].set_title(model)
+			ConfusionMatrixDisplay(cm).plot(ax=axs[i][j])
+			counter +=1
+	plt.tight_layout()
+	if save:
+		plt.savefig(file_name)
+ 		\end{minted}
+ 		\noindent Построение ROC кривой
+ 		\begin{minted}{python}
+def plot_roc_curve(y_conf_dict, y_true, save = False, file_name = 'roc_curve.png'):
+	fig, ax = plt.subplots(1, 1, figsize=(10, 10))
+	
+	for name, y_conf in y_conf_dict.items():
+		fpr, tpr, thresholds = metrics.roc_curve(y_true, y_conf)
+		roc_auc = metrics.auc(fpr, tpr)
+		metrics.RocCurveDisplay(fpr=fpr, tpr=tpr, roc_auc=roc_auc, estimator_name=name).plot(ax=ax)
+	
+	ax.plot((0, 1), (0, 1), 
+		label="Chance level (AUC = 0.5)",
+		color="k",
+		linestyle="--",)
+	ax.legend()
+	ax.set_title("Receiver Operating Characteristic (ROC) curves")
+	ax.grid(linestyle="--")
+	plt.tight_layout()
+	
+	if save:
+		plt.savefig(file_name)
+ 		\end{minted}
+ 		\par Результаты исследования моделей представлены ниже.
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics[scale=0.35]{ConfMat_plot.png}
+ 			\caption{Матрица ошибок для моделей YOLO и RT-DETR}
+ 		\end{figure}
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics[scale=0.4]{RCNN_ConfMat.png}
+ 			\caption{Матрица ошибок для моделей Faster R-CNN}
+ 		\end{figure}
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics[scale=0.4]{roc_curve.png}
+ 			\caption{ROC кривая для моделей YOLO и RT-DETR}
+ 		\end{figure}
+ 		\begin{figure}[H]
+ 			\centering
+ 			\includegraphics[scale=0.4]{RCNN_roc_curve.png}
+ 			\caption{ROC кривая для моделей Faster R-CNN}
+ 		\end{figure}
+ 		\par Полученные значения метрики качества:
+ 		\begin{minted}{bash}
+yolov5nu acc: 0.7361111111111112
+yolov8n acc: 0.7777777777777778
+yolov8s acc: 0.8472222222222222
+yolov8m acc: 0.8888888888888888
+yolov9t acc: 0.8055555555555556
+yolov10n acc: 0.75
+yolov10s acc: 0.8611111111111112
+yolov10m acc: 0.9027777777777778
+yolov8l acc: 0.9166666666666666
+yolov8x acc: 0.9444444444444444
+yolov9c acc: 0.8611111111111112
+yolov9e acc: 0.9861111111111112
+yolov10l acc: 0.9305555555555556
+yolov10x acc: 0.9027777777777778
+rtdetr-l acc: 0.9722222222222222
+rtdetr-x acc: 0.9583333333333334
+fasterrcnn_resnet50_fpn acc: 0.5416666666666666
+fasterrcnn_resnet50_fpn_v2 acc: 0.5277777777777778
+fasterrcnn_mobilenet_v3_large_fpn acc: 0.3472222222222222
+fasterrcnn_mobilenet_v3_large_320_fpn acc: 0.4305555555555556
+ 		\end{minted}
 \end{document}

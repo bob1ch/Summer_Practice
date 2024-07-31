@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}conf\PYGZus{}mat}\PYG{p}{(}\PYG{n}{y\PYGZus{}pred\PYGZus{}dict}\PYG{p}{,} \PYG{n}{y\PYGZus{}true}\PYG{p}{,} \PYG{n}{rows\PYGZus{}cols}\PYG{p}{:} \PYG{n+nb}{tuple}\PYG{p}{[}\PYG{n+nb}{int}\PYG{p}{]} \PYG{o}{|} \PYG{k+kc}{None} \PYG{o}{=} \PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{figsize}\PYG{p}{:} \PYG{n+nb}{tuple}\PYG{p}{[}\PYG{n+nb}{int}\PYG{p}{]} \PYG{o}{|} \PYG{k+kc}{None} \PYG{o}{=} \PYG{k+kc}{None}\PYG{p}{,} \PYG{n}{save} \PYG{o}{=} \PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{file\PYGZus{}name} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}ConfMat\PYGZus{}plot.png\PYGZsq{}}\PYG{p}{):}
+	\PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{rows\PYGZus{}cols}\PYG{p}{:}
+		\PYG{n}{rows}\PYG{p}{,} \PYG{n}{cols} \PYG{o}{=} \PYG{n}{factor}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{y\PYGZus{}pred\PYGZus{}dict}\PYG{p}{))} \PYG{c+c1}{\PYGZsh{}определяем кол\PYGZhy{}во строк и столбцов при помощи разложения на множители}
+	\PYG{n}{rows}\PYG{p}{,} \PYG{n}{cols} \PYG{o}{=} \PYG{n}{rows\PYGZus{}cols}
+	\PYG{n}{fig}\PYG{p}{,} \PYG{n}{axs} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{n}{rows}\PYG{p}{,} \PYG{n}{cols}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{n}{figsize}\PYG{p}{)}
+	\PYG{n}{counter} \PYG{o}{=} \PYG{l+m+mi}{0}
+		\PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{rows}\PYG{p}{):}
+			\PYG{k}{for} \PYG{n}{j} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n}{cols}\PYG{p}{):}
+			\PYG{n}{model}\PYG{p}{,} \PYG{n}{y\PYGZus{}pred} \PYG{o}{=} \PYG{n+nb}{list}\PYG{p}{(}\PYG{n}{y\PYGZus{}pred\PYGZus{}dict}\PYG{o}{.}\PYG{n}{items}\PYG{p}{())[}\PYG{n}{counter}\PYG{p}{]}
+			\PYG{n}{cm} \PYG{o}{=} \PYG{n}{confusion\PYGZus{}matrix}\PYG{p}{(}\PYG{n}{y\PYGZus{}true}\PYG{p}{,} \PYG{n}{y\PYGZus{}pred}\PYG{p}{)}
+			\PYG{n}{axs}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{j}\PYG{p}{]}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{n}{model}\PYG{p}{)}
+			\PYG{n}{ConfusionMatrixDisplay}\PYG{p}{(}\PYG{n}{cm}\PYG{p}{)}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{ax}\PYG{o}{=}\PYG{n}{axs}\PYG{p}{[}\PYG{n}{i}\PYG{p}{][}\PYG{n}{j}\PYG{p}{])}
+			\PYG{n}{counter} \PYG{o}{+=}\PYG{l+m+mi}{1}
+	\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{()}
+	\PYG{k}{if} \PYG{n}{save}\PYG{p}{:}
+		\PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{n}{file\PYGZus{}name}\PYG{p}{)}
+\end{Verbatim}

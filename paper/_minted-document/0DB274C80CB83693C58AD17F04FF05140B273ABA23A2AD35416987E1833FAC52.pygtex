@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+yolov5nu\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.7361111111111112
+yolov8n\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.7777777777777778
+yolov8s\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.8472222222222222
+yolov8m\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.8888888888888888
+yolov9t\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.8055555555555556
+yolov10n\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.75
+yolov10s\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.8611111111111112
+yolov10m\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.9027777777777778
+yolov8l\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.9166666666666666
+yolov8x\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.9444444444444444
+yolov9c\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.8611111111111112
+yolov9e\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.9861111111111112
+yolov10l\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.9305555555555556
+yolov10x\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.9027777777777778
+rtdetr\PYGZhy{}l\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.9722222222222222
+rtdetr\PYGZhy{}x\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.9583333333333334
+fasterrcnn\PYGZus{}resnet50\PYGZus{}fpn\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.5416666666666666
+fasterrcnn\PYGZus{}resnet50\PYGZus{}fpn\PYGZus{}v2\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.5277777777777778
+fasterrcnn\PYGZus{}mobilenet\PYGZus{}v3\PYGZus{}large\PYGZus{}fpn\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.3472222222222222
+fasterrcnn\PYGZus{}mobilenet\PYGZus{}v3\PYGZus{}large\PYGZus{}320\PYGZus{}fpn\PYG{+w}{ }acc:\PYG{+w}{ }\PYG{l+m}{0}.4305555555555556
+\end{Verbatim}

@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{plot\PYGZus{}roc\PYGZus{}curve}\PYG{p}{(}\PYG{n}{y\PYGZus{}conf\PYGZus{}dict}\PYG{p}{,} \PYG{n}{y\PYGZus{}true}\PYG{p}{,} \PYG{n}{save} \PYG{o}{=} \PYG{k+kc}{False}\PYG{p}{,} \PYG{n}{file\PYGZus{}name} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}roc\PYGZus{}curve.png\PYGZsq{}}\PYG{p}{):}
+	\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{figsize}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{))}
+	
+	\PYG{k}{for} \PYG{n}{name}\PYG{p}{,} \PYG{n}{y\PYGZus{}conf} \PYG{o+ow}{in} \PYG{n}{y\PYGZus{}conf\PYGZus{}dict}\PYG{o}{.}\PYG{n}{items}\PYG{p}{():}
+		\PYG{n}{fpr}\PYG{p}{,} \PYG{n}{tpr}\PYG{p}{,} \PYG{n}{thresholds} \PYG{o}{=} \PYG{n}{metrics}\PYG{o}{.}\PYG{n}{roc\PYGZus{}curve}\PYG{p}{(}\PYG{n}{y\PYGZus{}true}\PYG{p}{,} \PYG{n}{y\PYGZus{}conf}\PYG{p}{)}
+		\PYG{n}{roc\PYGZus{}auc} \PYG{o}{=} \PYG{n}{metrics}\PYG{o}{.}\PYG{n}{auc}\PYG{p}{(}\PYG{n}{fpr}\PYG{p}{,} \PYG{n}{tpr}\PYG{p}{)}
+		\PYG{n}{metrics}\PYG{o}{.}\PYG{n}{RocCurveDisplay}\PYG{p}{(}\PYG{n}{fpr}\PYG{o}{=}\PYG{n}{fpr}\PYG{p}{,} \PYG{n}{tpr}\PYG{o}{=}\PYG{n}{tpr}\PYG{p}{,} \PYG{n}{roc\PYGZus{}auc}\PYG{o}{=}\PYG{n}{roc\PYGZus{}auc}\PYG{p}{,} \PYG{n}{estimator\PYGZus{}name}\PYG{o}{=}\PYG{n}{name}\PYG{p}{)}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{ax}\PYG{o}{=}\PYG{n}{ax}\PYG{p}{)}
+	
+	\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{((}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{),} \PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{),}
+		\PYG{n}{label}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Chance level (AUC = 0.5)\PYGZdq{}}\PYG{p}{,}
+		\PYG{n}{color}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}k\PYGZdq{}}\PYG{p}{,}
+		\PYG{n}{linestyle}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}\PYGZhy{}\PYGZdq{}}\PYG{p}{,)}
+	\PYG{n}{ax}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{()}
+	\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Receiver Operating Characteristic (ROC) curves\PYGZdq{}}\PYG{p}{)}
+	\PYG{n}{ax}\PYG{o}{.}\PYG{n}{grid}\PYG{p}{(}\PYG{n}{linestyle}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}\PYGZhy{}\PYGZhy{}\PYGZdq{}}\PYG{p}{)}
+	\PYG{n}{plt}\PYG{o}{.}\PYG{n}{tight\PYGZus{}layout}\PYG{p}{()}
+	
+	\PYG{k}{if} \PYG{n}{save}\PYG{p}{:}
+		\PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{n}{file\PYGZus{}name}\PYG{p}{)}
+\end{Verbatim}
