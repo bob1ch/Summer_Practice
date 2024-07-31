@@ -8,5 +8,4 @@
 	\PYG{k}{if} \PYG{n}{save}\PYG{p}{:}
 	    \PYG{n+nb}{print}\PYG{p}{(}\PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}accuracy metrics saved in }\PYG{l+s+si}{\PYGZob{}}\PYG{n}{file\PYGZus{}name}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
 	    \PYG{n}{file}\PYG{o}{.}\PYG{n}{close}\PYG{p}{()}
-	    \PYGZbs{}\PYG{n}{caption}\PYG{p}{\PYGZob{}}\PYG{n}{Вычисление} \PYG{n}{точности}\PYG{p}{\PYGZcb{}}
 \end{Verbatim}

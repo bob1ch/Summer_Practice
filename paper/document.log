@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.7.29)  31 JUL 2024 19:16
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.7.29)  31 JUL 2024 19:48
  system commands enabled.
 **document.tex
 (./document.tex
@@ -2003,7 +2003,7 @@ Package polyglossia Warning: Asking to add empty feature to main font (Language
 
 [4] (./subfiles/main.tex
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
-[]\TU/TimesNewRoman(0)/m/n/14.4 Обеспечение безопасного 
+[]\TU/TimesNewRoman(0)/m/n/14.4 Обеспечения безопасного 
 проведения работ в областях, которые
  []
 
@@ -2017,6 +2017,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 Underfull \hbox (badness 10000) in paragraph at lines 21--22
 []\TU/TimesNewRoman(0)/m/n/14.4 В частном случае задача д
 етекции была превращена в задачу
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 28--29
+[]\TU/TimesNewRoman(0)/m/n/14.4 Для всех моделей были исп
+ользованы веса, которые получили, при
  []
 
 
@@ -2224,12 +2230,6 @@ Underfull \hbox (badness 2384) in paragraph at lines 67--68
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 69--70
-[]\TU/TimesNewRoman(0)/m/n/14.4 Заключительной идее в R-CNN 
-стало следующее: выборочный поиск
- []
-
-
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
 atin" to scripttag "") on input line 71.
 
@@ -2322,15 +2322,18 @@ Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 97.
 
 [10<./images/bear3.jpg><./images/8.jpg>]
-Underfull \hbox (badness 1533) in paragraph at lines 97--98
-\TU/TimesNewRoman(0)/m/n/14.4 предказанные моделями. В ф
-ункцию для построения ROC кривой вместо
- []
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 98.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 98.
 
 
 \openout4 = document.pyg
 (./_minted-document/default.pygstyle)
-(./_minted-document/8E95CCEA33C8B4A567C54765210C9317B654264170BE0172DFAD1E0D8D5
+(./_minted-document/9ECFEE946876EA73CEC2DAC89DE97C9CB654264170BE0172DFAD1E0D8D5
 31DA9.pygtex
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
@@ -2348,6 +2351,32 @@ LaTeX Font Info:    Font shape `TU/CourierNew(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/n' will be
 (Font)              scaled to size 5.39996pt on input line 2.
 )
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
+t line 110.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 110.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 110.
+
+
+Underfull \hbox (badness 1533) in paragraph at lines 97--111
+\TU/TimesNewRoman(0)/m/n/14.4 предказанные моделями. В ф
+ункцию для построения ROC кривой вместо
+ []
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 112.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 112.
+
+
 \openout4 = document.pyg
 
 (./_minted-document/51741012185E5A42B25E1A7A7BA48691B654264170BE0172DFAD1E0D8D5
@@ -2363,20 +2392,38 @@ Package polyglossia Warning: Asking to add empty feature to main font (Language
 LaTeX Font Info:    Font shape `TU/CourierNew(0)/m/it' will be
 (Font)              scaled to size 12.9599pt on input line 4.
 
-Package polyglossia Warning: Asking to add empty feature to main font(Script="l
-atin" to scripttag "") on input line 8.
-
-
-Package polyglossia Warning: Asking to add empty feature to main font (Language
-="Russian" to langtag "") on input line 8.
-
-[11]
 Overfull \hbox (38.704pt too wide) in paragraph at lines 13--13
 || | |[][][]\TU/CourierNew(0)/m/n/14.4 ConfusionMatrixDisplay(cm)[].[]plot(ax[]
 =[]axs[i][j])|  
  []
 
 )
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 131.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 131.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 133.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 133.
+
+[11]
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 134.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 134.
+
+
 \openout4 = document.pyg
 
 (./_minted-document/2212F41B7160331753C0740480CD2A9BB654264170BE0172DFAD1E0D8D5
@@ -2389,41 +2436,24 @@ atin" to scripttag "") on input line 1.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 1.
 
+)
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
-atin" to scripttag "") on input line 14.
+atin" to scripttag "") on input line 156.
 
 
 Package polyglossia Warning: Asking to add empty feature to main font (Language
-="Russian" to langtag "") on input line 14.
-
-[12])
-
-Package polyglossia Warning: Asking to add empty feature to main font(Script="l
-atin" to scripttag "") on input line 154.
-
-
-Package polyglossia Warning: Asking to add empty feature to main font (Language
-="Russian" to langtag "") on input line 154.
-
-<images/ConfMat_plot.png, id=142, 1445.4pt x 1445.4pt>
-File: images/ConfMat_plot.png Graphic file (type png)
-<use images/ConfMat_plot.png>
-Package luatex.def Info: images/ConfMat_plot.png  used on input line 156.
-(luatex.def)             Requested size: 505.89758pt x 505.89758pt.
-
-Overfull \hbox (7.97433pt too wide) in paragraph at lines 156--157
- [][][][] 
- []
+="Russian" to langtag "") on input line 156.
 
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
-atin" to scripttag "") on input line 157.
+atin" to scripttag "") on input line 158.
 
 
 Package polyglossia Warning: Asking to add empty feature to main font (Language
-="Russian" to langtag "") on input line 157.
+="Russian" to langtag "") on input line 158.
 
+[12]
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
 atin" to scripttag "") on input line 159.
@@ -2432,11 +2462,16 @@ atin" to scripttag "") on input line 159.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 159.
 
-<images/RCNN_ConfMat.png, id=143, 722.7pt x 722.7pt>
-File: images/RCNN_ConfMat.png Graphic file (type png)
-<use images/RCNN_ConfMat.png>
-Package luatex.def Info: images/RCNN_ConfMat.png  used on input line 161.
-(luatex.def)             Requested size: 289.07487pt x 289.07487pt.
+<images/ConfMat_plot.png, id=144, 1445.4pt x 1445.4pt>
+File: images/ConfMat_plot.png Graphic file (type png)
+<use images/ConfMat_plot.png>
+Package luatex.def Info: images/ConfMat_plot.png  used on input line 161.
+(luatex.def)             Requested size: 505.89758pt x 505.89758pt.
+
+Overfull \hbox (7.97433pt too wide) in paragraph at lines 161--162
+ [][][][] 
+ []
+
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
 atin" to scripttag "") on input line 162.
@@ -2447,25 +2482,16 @@ Package polyglossia Warning: Asking to add empty feature to main font (Language
 
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
-atin" to scripttag "") on input line 163.
-
-
-Package polyglossia Warning: Asking to add empty feature to main font (Language
-="Russian" to langtag "") on input line 163.
-
-[13]
-
-Package polyglossia Warning: Asking to add empty feature to main font(Script="l
 atin" to scripttag "") on input line 164.
 
 
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 164.
 
-<images/roc_curve.png, id=148, 722.7pt x 722.7pt>
-File: images/roc_curve.png Graphic file (type png)
-<use images/roc_curve.png>
-Package luatex.def Info: images/roc_curve.png  used on input line 166.
+<images/RCNN_ConfMat.png, id=145, 722.7pt x 722.7pt>
+File: images/RCNN_ConfMat.png Graphic file (type png)
+<use images/RCNN_ConfMat.png>
+Package luatex.def Info: images/RCNN_ConfMat.png  used on input line 166.
 (luatex.def)             Requested size: 289.07487pt x 289.07487pt.
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
@@ -2483,7 +2509,7 @@ atin" to scripttag "") on input line 168.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 168.
 
-[14<./images/ConfMat_plot.png>]
+[13]
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
 atin" to scripttag "") on input line 169.
@@ -2492,10 +2518,10 @@ atin" to scripttag "") on input line 169.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 169.
 
-<images/RCNN_roc_curve.png, id=156, 722.7pt x 722.7pt>
-File: images/RCNN_roc_curve.png Graphic file (type png)
-<use images/RCNN_roc_curve.png>
-Package luatex.def Info: images/RCNN_roc_curve.png  used on input line 171.
+<images/roc_curve.png, id=152, 722.7pt x 722.7pt>
+File: images/roc_curve.png Graphic file (type png)
+<use images/roc_curve.png>
+Package luatex.def Info: images/roc_curve.png  used on input line 171.
 (luatex.def)             Requested size: 289.07487pt x 289.07487pt.
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
@@ -2507,11 +2533,41 @@ Package polyglossia Warning: Asking to add empty feature to main font (Language
 
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 173.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 173.
+
+[14<./images/ConfMat_plot.png>]
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
 atin" to scripttag "") on input line 174.
 
 
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 174.
+
+<images/RCNN_roc_curve.png, id=159, 722.7pt x 722.7pt>
+File: images/RCNN_roc_curve.png Graphic file (type png)
+<use images/RCNN_roc_curve.png>
+Package luatex.def Info: images/RCNN_roc_curve.png  used on input line 176.
+(luatex.def)             Requested size: 289.07487pt x 289.07487pt.
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 177.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 177.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 179.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 179.
 
 [15<./images/RCNN_ConfMat.png><./images/roc_curve.png>]
 \openout4 = document.pyg
@@ -2737,26 +2793,26 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41797 strings out of 476447
+ 41810 strings out of 476447
  125038,2373549 words of node,token memory allocated
  833 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 121 glue_spec
 , 7 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1397,3:224,4:278,5:1030,6:63,7:3699,8:10,9:647,10:13,11:15
+   avail lists: 1:2,2:2173,3:224,4:326,5:1030,6:69,7:3699,8:10,9:774,10:13,11:17
 
- 62668 multiletter control sequences out of 65536+600000
+ 62678 multiletter control sequences out of 65536+600000
  77 fonts using 14626359 bytes
- 109i,12n,128p,2368b,3207s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,14n,128p,2368b,3207s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/fonts/TTF/couri.ttf></usr/share/fonts/TTF/cour.ttf></usr/share/fonts
 /TTF/courbd.ttf></usr/share/fonts/TTF/Timesbd.TTF></usr/share/fonts/TTF/Times.TT
 F></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy6.pfb>
-Output written on document.pdf (21 pages, 1176017 bytes).
+Output written on document.pdf (21 pages, 1173726 bytes).
 
-PDF statistics: 248 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 131072)
+PDF statistics: 251 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 131072)
  73 words of extra memory for PDF output out of 10000 (max. 100000000)
 
