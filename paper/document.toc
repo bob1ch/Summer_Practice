@@ -4,4 +4,5 @@
 \contentsline {subsection}{\numberline {1.1}Индивидуальное задание практики}{5}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Выбор моделей}{5}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}YOLO}{6}{subsection.1.3}%
-\contentsline {section}{Заключение}{8}{section*.3}%
+\contentsline {subsection}{\numberline {1.4}RT-DETR}{7}{subsection.1.4}%
+\contentsline {section}{Заключение}{9}{section*.6}%

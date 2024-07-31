@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.7.29)  30 JUL 2024 18:45
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.7.29)  31 JUL 2024 17:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1786,6 +1786,30 @@ atin" to scripttag "") on input line 6.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 6.
 
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 7.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 7.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 7.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 7.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 7.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 7.
+
 )
 \tf@toc=\write7
 \openout7 = `document.toc'.
@@ -1934,16 +1958,16 @@ atin" to scripttag "") on input line 39.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 39.
 
-File: images/YOLO_arch.png Graphic file (type bmp)
-<images/YOLO_arch.png>
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
-atin" to scripttag "") on input line 42.
+atin" to scripttag "") on input line 41.
 
 
 Package polyglossia Warning: Asking to add empty feature to main font (Language
-="Russian" to langtag "") on input line 42.
+="Russian" to langtag "") on input line 41.
 
+File: images/YOLO_arch.png Graphic file (type bmp)
+<images/YOLO_arch.png>
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
 atin" to scripttag "") on input line 44.
@@ -1952,7 +1976,102 @@ atin" to scripttag "") on input line 44.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 44.
 
-[6])
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 45.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 45.
+
+[6]
+Underfull \hbox (badness 1087) in paragraph at lines 49--50
+\TU/TimesNewRoman(0)/m/n/14.4 негативно сказывается на производительности и точ
+ности модели. В свою
+ []
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 51.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 51.
+
+File: images/RT-DETR_arch.png Graphic file (type bmp)
+<images/RT-DETR_arch.png>
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 54.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 54.
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 50--55
+[]\TU/TimesNewRoman(0)/m/n/14.4 Мы передаем признаки из последних трех слоев бэ
+кбона в кодер.
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 50--55
+\TU/TimesNewRoman(0)/m/n/14.4 Эффективный гибридный кодер преобразует многомасш
+табные признаки в
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 50--55
+\TU/TimesNewRoman(0)/m/n/14.4 последовательность признаков изображения посредст
+вом внутримасштабного
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 50--55
+\TU/TimesNewRoman(0)/m/n/14.4 взаимодействия признаков основанного на внимании 
+(Attention based Intra-
+ []
+
+
+Underfull \hbox (badness 6876) in paragraph at lines 50--55
+\TU/TimesNewRoman(0)/m/n/14.4 scale Feature Interaction, AIFI) и слияния межмас
+штабных признаков на
+ []
+
+
+Underfull \hbox (badness 5008) in paragraph at lines 50--55
+\TU/TimesNewRoman(0)/m/n/14.4 основе CNN (CNN-based Cross-scale Feature Fusion,
+ CCFF). Затем выбор
+ []
+
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 55.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 55.
+
+[7]
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 58.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 58.
+
+File: images/RT-DETR_test.png Graphic file (type bmp)
+<images/RT-DETR_test.png>
+
+Package polyglossia Warning: Asking to add empty feature to main font(Script="l
+atin" to scripttag "") on input line 61.
+
+
+Package polyglossia Warning: Asking to add empty feature to main font (Language
+="Russian" to langtag "") on input line 61.
+
+)
 
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
 atin" to scripttag "") on input line 43.
@@ -1961,7 +2080,7 @@ atin" to scripttag "") on input line 43.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 43.
 
-[7] (./subfiles/conclusion.tex
+[8] (./subfiles/conclusion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
 []\TU/TimesNewRoman(0)/m/n/14.4 Во время прохождения практики были успешно выпо
 лнены все
@@ -1999,7 +2118,7 @@ atin" to scripttag "") on input line 46.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 46.
 
-[8]
+[9]
 
 LaTeX Warning: Empty bibliography on input line 48.
 
@@ -2063,7 +2182,7 @@ atin" to scripttag "") on input line 8.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 8.
 
-[9
+[10
 
 ]
 
@@ -2074,7 +2193,7 @@ atin" to scripttag "") on input line 8.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 8.
 
-[10
+[11
 
 ]) (./subfiles/practice-task.tex
 
@@ -2093,7 +2212,7 @@ atin" to scripttag "") on input line 6.
 Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 6.
 
-[11]) (./document.aux)
+[12]) (./document.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -2102,8 +2221,14 @@ L3 programming layer <2024-02-20>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 62A4B63E78A87606414CC010372C101D;930.
+
+Package rerunfilecheck Warning: File `document.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `document.out':
+(rerunfilecheck)             Before: D444297C72F82DDBD37DB30F1004F6BC;1022
+(rerunfilecheck)             After:  0CFD3EB890152F7500C550DD3B827E49;1022.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                document
@@ -2114,12 +2239,12 @@ Package logreq Info: Writing requests to 'document.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40411 strings out of 476772
- 822900 string characters out of 5803394
+ 40433 strings out of 476772
+ 823484 string characters out of 5803394
  1930839 words of memory out of 5000000
- 61806 multiletter control sequences out of 15000+600000
+ 61826 multiletter control sequences out of 15000+600000
  563557 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  109i,12n,131p,2369b,3963s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on document.pdf (11 pages).
+Output written on document.pdf (12 pages).
