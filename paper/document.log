@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.7.29)  31 JUL 2024 18:53
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024/Arch Linux)  (format=lualatex 2024.7.29)  31 JUL 2024 19:16
  system commands enabled.
 **document.tex
 (./document.tex
@@ -2516,10 +2516,6 @@ Package polyglossia Warning: Asking to add empty feature to main font (Language
 [15<./images/RCNN_ConfMat.png><./images/roc_curve.png>]
 \openout4 = document.pyg
 
-runsystem(pygmentize -l 'bash' -f latex -P commandprefix=PYG -F tokenmerge -P st
-ripnl='False' -o _minted-document/0DB274C80CB83693C58AD17F04FF05140B273ABA23A2AD
-35416987E1833FAC52.pygtex document.pyg)...executed.
-
 (./_minted-document/0DB274C80CB83693C58AD17F04FF05140B273ABA23A2AD35416987E1833
 FAC52.pygtex
 
@@ -2548,33 +2544,52 @@ Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 45.
 
 [17] (./subfiles/conclusion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 2343) in paragraph at lines 4--5
+[]\TU/TimesNewRoman(0)/m/n/14.4 По полученным результата
+м исследования можно сделать вывод, что
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 4--5
+\TU/TimesNewRoman(0)/m/n/14.4 не было ложно-отрицательн
+ых срабатываний. Это означает, что модель н
+е
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 5--6
+\TU/TimesNewRoman(0)/m/n/14.4 столкнулись исследуемые м
+одели заключалась в том, что не получалось
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 []\TU/TimesNewRoman(0)/m/n/14.4 Во время прохождения пра
 ктики были успешно выполнены все
  []
 
 
-Underfull \hbox (badness 1448) in paragraph at lines 4--6
+Underfull \hbox (badness 1448) in paragraph at lines 6--8
 \TU/TimesNewRoman(0)/m/n/14.4 в области разработки прог
 раммных продуктов с применением современн
 ых
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 \TU/TimesNewRoman(0)/m/n/14.4 информационных технологи
 й, сформировано единство теоретической и
  []
 
 
-Underfull \hbox (badness 1303) in paragraph at lines 4--6
+Underfull \hbox (badness 1303) in paragraph at lines 6--8
 \TU/TimesNewRoman(0)/m/n/14.4 практической подготовки, 
 закреплены теоретические знания и практич
 еские
  []
 
 )
-Underfull \hbox (badness 2368) in paragraph at lines 6--48
+Underfull \hbox (badness 2368) in paragraph at lines 8--48
 []\TU/TimesNewRoman(0)/m/n/14.4 При выполнении индивидуа
 льного практического задания со стороны
  []
@@ -2676,6 +2691,22 @@ Package polyglossia Warning: Asking to add empty feature to main font (Language
 ="Russian" to langtag "") on input line 6.
 
 
+Underfull \hbox (badness 2591) in paragraph at lines 6--6
+[]\TU/TimesNewRoman(0)/m/n/14.4 Виды работ и требования п
+о их выполнению: |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 6--6
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 6--6
+|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
 Package polyglossia Warning: Asking to add empty feature to main font(Script="l
 atin" to scripttag "") on input line 6.
 
@@ -2711,7 +2742,7 @@ Here is how much of LuaTeX's memory you used:
  833 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 121 glue_spec
 , 7 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1397,3:224,4:278,5:1030,6:63,7:3568,8:10,9:647,10:13,11:15
+   avail lists: 1:2,2:1397,3:224,4:278,5:1030,6:63,7:3699,8:10,9:647,10:13,11:15
 
  62668 multiletter control sequences out of 65536+600000
  77 fonts using 14626359 bytes
@@ -2722,7 +2753,7 @@ F></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy6.pfb>
-Output written on document.pdf (21 pages, 1175463 bytes).
+Output written on document.pdf (21 pages, 1176017 bytes).
 
 PDF statistics: 248 PDF objects out of 1000 (max. 8388607)
  182 compressed objects within 2 object streams
